@@ -113,12 +113,12 @@ def main():
     parser = argparse.ArgumentParser(description="Download Webex Contact Center capture URLs.")
     parser.add_argument("input_file", help="Path to the input file containing task IDs.")
     parser.add_argument("output_file", help="Path to the output file for saving capture URLs.")
-    parser.add_argument("--config", default="config.yml", help="Path to the configuration YAML file (default: config.yml).")
-    parser.add_argument("--include-segments", action="store_true", help="Include segments in the capture URLs.")
-    parser.add_argument("--url-expiration", type=int, default=10, help="URL expiration time in minutes (default: 10).")
-    parser.add_argument("--download", action="store_true", help="Download files directly from the parsed URLs.")
-    parser.add_argument("--output-directory", default="downloads", help="Directory to save downloaded files (default: downloads).")
-    parser.add_argument("--developer-mode", action="store_true", help="Enable developer mode for verbose logging.")
+    parser.add_argument("-c", "--config", default="config.yml", help="Path to the configuration YAML file (default: config.yml).")
+    parser.add_argument("-s", "--include-segments", action="store_true", help="Include segments in the capture URLs.")
+    parser.add_argument("-u", "--url-expiration", type=int, default=10, help="URL expiration time in minutes (default: 10).")
+    parser.add_argument("-d", "--download", action="store_true", help="Download files directly from the parsed URLs.")
+    parser.add_argument("-o", "--output-directory", default="downloads", help="Directory to save downloaded files (default: downloads).")
+    parser.add_argument("-d", "--developer-mode", action="store_true", help="Enable developer mode for verbose logging.")
 
     args = parser.parse_args()
 

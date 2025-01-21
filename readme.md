@@ -54,12 +54,12 @@ python script.py <input_file> <output_file> [options]
 - `<output_file>`: Path to save the list of capture URLs.
 
 #### Optional Arguments:
-- `--config`: Path to the YAML configuration file (default: `config.yml`).
-- `--include-segments`: Include segmented captures in the results.
-- `--url-expiration`: URL expiration time in minutes (default: 10).
-- `--download`: Download the capture files directly.
-- `--output-directory`: Directory to save downloaded files (default: `downloads`).
-- `--developer-mode`: Enable detailed logging for debugging.
+- `-c` `--config`: Path to the YAML configuration file (default: `config.yml`).
+- `-i` `--include-segments`: Include segmented captures in the results.
+- `-u` `--url-expiration`: URL expiration time in minutes (default: 10).
+- `-d` `--download`: Download the capture files directly.
+- `-o` `--output-directory`: Directory to save downloaded files (default: `downloads`).
+- `-d` `--developer-mode`: Enable detailed logging for debugging.
 
 ### Examples
 
