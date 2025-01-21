@@ -1,0 +1,4 @@
+# Configuration for Webex Contact Center API
+org-id: "" # Replace with your actual organization ID
+base-url: "https://api.wxcc-eu1.cisco.com" # Replace with the base URL of the Webex Contact Center API
+api-key: "" # Replace with your actual API key
