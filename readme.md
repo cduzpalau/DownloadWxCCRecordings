@@ -1,12 +1,12 @@
-# Webex Contact Center Capture Downloader
+# Webex Contact Center Recording Downloader
 
 This Python script allows you to interact with the Webex Contact Center API to:
 
 1. Fetch URLs for task captures.
-2. Optionally download the capture files directly, renaming them for better organization.
+2. Optionally download the capture files (also called voice recordings) directly, renaming them for better organization.
 
 ## Features
-- Fetch capture URLs for up to 10 task IDs in a single request.
+- Fetch capture URLs for up to 10 task IDs in a single request using [list captures API call](https://developer.webex-cx.com/documentation/captures/v1/list-captures)
 - Parse and save capture URLs into a text file for use with tools like `wget`.
 - Download captures directly, renaming them as `<taskId>_<fileName>.wav`.
 - Supports YAML configuration for API keys and settings.
